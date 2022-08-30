@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc -b",
     "dev": "ts-node src/index.ts",
     "format": "prettier --write 'src/**/*.{js,ts,json}'",
     "lint:all": "yarn lint && yarn tscCheck",
@@ -35,5 +36,8 @@
     "express": "^4.17.1",
     "fs-extra": "^10.1.0",
     "yargs": "^17.5.1"
+  },
+  "bin": {
+    "create-3t-app": "./dist/index.js"
   }
 }
